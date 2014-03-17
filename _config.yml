@@ -1,0 +1,4 @@
+markdown: redcarpet
+baseurl: /auto-trim
+exclude: ['README.md']
+permalink: pretty
