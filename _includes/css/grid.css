@@ -1,0 +1,66 @@
+.grid {
+  margin: 0;
+  padding: 0;
+  text-rendering: optimizespeed;
+  display: -webkit-flex;
+  -webkit-flex-flow: row wrap;
+  display: -ms-flexbox;
+  -ms-flex-flow: row wrap;
+}
+
+.grid-bottom {
+  -webkit-align-items: flex-end;
+  -ms-align-items: flex-end;
+}
+
+.opera-only :-o-prefocus, .grid {
+  word-spacing: -0.43em;
+}
+
+.unit {
+  letter-spacing: normal;
+  text-rendering: auto;
+  vertical-align: top;
+  word-spacing: normal;
+  display: inline-block;
+  visibility: visible;
+}
+
+
+.gutter{
+	padding-left: 2rem;
+	padding-right: 2rem;
+	padding-bottom: 2rem;
+}
+
+.unit-s-1{
+	width: 100%;
+}
+
+@media only screen and (min-width: 800px){
+	.unit-m-1-2{
+	width:50%;
+	}
+	.unit-m-1 .paragraph{
+	text-align: center;
+	font-size: 1.2rem;
+	}
+}
+
+img{
+	width: 100%;
+}
+
+.img-flex{
+	padding-bottom: 1.5rem;
+}
+
+
+@media only screen and (min-width: 900px){
+.img-flex{
+	float: left;
+	width:50%;
+	margin-right: 2rem;
+	margin-top: 1rem;
+}
+}

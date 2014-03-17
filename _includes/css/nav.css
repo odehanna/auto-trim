@@ -1,0 +1,184 @@
+html, body
+{
+	padding: 0;
+	margin: 0;
+}
+body {
+		background-image: url(../img/ticksbody.png);
+	background-repeat: repeat;
+	background-color: #.navigation li a .navigation li a .navigation li a ;
+	-webkit-text-size-adjust: none;
+}
+body *
+{
+	text-shadow: none;
+}
+h1, h2, h3, h4, h5, h6
+{
+	line-height: 1;
+	color: #e2e1e1;
+	font-weight: bold;
+	margin: 20px 0 10px 0;
+}
+h1, h2, h3
+{
+	font-size: 18px;
+}
+h4, h5, h6
+{
+	font-size: 16px;
+}
+p
+{
+	margin: 0 0 10px 0;
+}
+a, a:link, a:active, a:visited, a:hover
+{
+	color: #ec2024;
+	text-decoration: underline;
+}
+pre
+{
+	font-size: 12px;
+	width: 100%;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+}
+#page nav
+{
+	display: none;
+}
+
+#header,
+.header,
+#footer
+{
+	background-color: #eee;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+	line-height: 40px;
+	height: 0px;
+	padding: 0 50px;
+}
+#header a,
+.header a
+{
+	background: center center no-repeat transparent;
+	background-image: url("../img/nav.png");
+
+	display: block;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+#header a.friends,
+.header a.friends
+{
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAVNJREFUeNq01jFLAzEYxvH2UBCxiIiDUhzcdXCyIk5ufgUXLR37JdxcXBxcuwmOOtml0EKpo04iWIpIQREVEVFLjf9AhoC9e3O5uxd+lMLdPU1yedO8UiqXdQWO122ghi4+8IwGqiiId+uRCHbxqsLrFHNRz5ACSnhTch1EPScQpnIH0w7TWcGiz5rouS45rtkMVnxCJrAQ4yUq+oT8YhAjZOAT8oWHGCE9nxC9H64cA15w4xOiW0HbfErVNhvUa8c3cecQcoZv3xA9z+fCNbe4SNq7jvEUMaUnuE/au7SjkHbSR1G637ULh73Kn+gn7cIBttELGckQh9Jo8iMOrSksYx2b2MKk8FuvUUcHl/9GbiWuooYu3pVf/eARLZQxbp8na2YR0659e+HLmM/geN+z98lSRv8hZu2QQkYh+kzKjZkvHdPahymH6DNp5Cucev0JMAAkKj0NEoYBJwAAAABJRU5ErkJggg==);
+}
+#header a.right,
+.header a.right
+{
+	left: auto;
+	right: 10px;
+}
+#content,
+.content
+{
+margin: 0 auto 0 auto;
+}
+
+
+/* BIG SCREENS*/
+
+ @media (min-width: 1200px) {
+	#header{
+		display: none;
+	}
+ }
+
+#header-big{
+	display: none;
+}
+
+ @media (min-width: 1200px) {
+	#header-big{
+		display: block;
+	}
+ }
+
+/* Adjusting the margins, paddings and no list styles */
+
+#header-big{
+   margin: 0 auto -35px auto;
+}
+
+.navigation {
+margin:0;
+padding:0;
+text-align: left;
+list-style:none;
+}
+
+/* Little tricking with positions */
+.navigation li {
+display: inline-block; /* Show list items inline */
+width:220px;
+position:relative;
+}
+
+/* Playing with Main Categories */
+.navigation li a {
+background-color: #e2e1e1;
+font-size: 1rem;
+color:#1f090d;
+display:block; /* Making sure a element covers whole li area */
+padding:8px 7px 8px 7px;
+text-decoration:none; /* No underline */
+text-align:center;
+text-transform:uppercase;
+}
+.navigation li a:hover {
+color:#cb1c2b;
+}
+
+/* Sub Cat Menu stuff*/
+.navigation ul {
+position:absolute;
+left:0;
+display:none; /* Hide it by default */
+margin:0 0 0 -1px;
+padding:0;
+list-style:none;
+border-bottom:3px solid #cb1c2b;
+z-index: 2000;
+}
+
+.navigation ul li {
+width:220px;
+float:left;
+border-top:none;
+}
+
+/* Sub Cat menu link properties */
+.navigation ul a {
+display:block; /* Making sure a element covers whole li area */
+height:50px;
+color:#56565b;
+text-decoration:none;
+border-top:none;
+border-bottom:1px solid #fff;
+}
+
+#sub{
+font-size: 0.8rem;
+padding:18px 7px 10px 7px;
+}
+
+.navigation ul a:hover {
+color:#cb1c2b;
+}

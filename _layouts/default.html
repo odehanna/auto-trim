@@ -39,7 +39,7 @@
     <div class="headercontent">
       <header id="masthead">
         <div class="logo">
-          <a href="{{site.baseurl}}/" rel="home"><img src="{{site.baseurl}}/img/logo.png" alt="CCR"></a>
+          <a href="{{site.baseurl}}/" rel="home"><img src="{{site.baseurl}}/img/logo.png" alt="Auto Trim Logo"></a>
         </div>
 
 {% include nav.html %}
@@ -48,6 +48,43 @@
     </div>
 
 
+
+<!-- nav small screens  -->
+    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="{{site.baseurl}}/js/jquery.mmenu.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        $('nav#menu').mmenu({
+          slidingSubmenus: false
+        });
+      });
+    </script>
+    <script src="{{site.baseurl}}/js/responsiveslides.min.js"></script>
+    <script>
+  $(function() {
+    $(".rslides").responsiveSlides();
+  });
+</script>
+
+<!-- nav big screens  -->
+  <script type="text/javascript">
+// Executes the function when DOM will be loaded fully
+$(document).ready(function () {
+  // hover property will help us set the events for mouse enter and mouse leave
+  $('.navigation li').hover(
+    // When mouse enters the .navigation element
+    function () {
+      //Fade in the navigation submenu
+      $('ul', this).fadeIn();   // fadeIn will show the sub cat menu
+    },
+    // When mouse leaves the .navigation element
+    function () {
+      //Fade out the navigation submenu
+      $('ul', this).fadeOut();   // fadeOut will hide the sub cat menu
+    }
+  );
+});
+  </script>
 
 
 
