@@ -6,6 +6,8 @@ html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
+	background-image: url(../img/cream_pixels.png);
+	background-repeat: repeat;
 }
 
 body{
@@ -177,7 +179,7 @@ h1  {
 }
 
 .headercontent {
-	background-color: #e2e1e1;
+	background:rgba(255,255,255,0.7);
 
 }
 
@@ -198,7 +200,7 @@ h1  {
   display: block;
 	float: right;
   vertical-align: bottom;
-  width: 125px;
+  width: 170px;
   margin-right: 13px;
   margin-top: 13px;
 }
@@ -206,7 +208,7 @@ h1  {
 @media screen and (min-width: 300px) {
 	.logo img{
 	margin-right: 20px;
-	width: 200px;
+	width: 240px;
 	}
 }
 
@@ -217,11 +219,13 @@ h1  {
 	}
 }
 
+
+
+@media screen and (min-width: 800px) {
 	.logo{
 	min-height: 150px;
 	}
 }
-
 
 .tagline{
 	margin: 50px auto 20px auto;
