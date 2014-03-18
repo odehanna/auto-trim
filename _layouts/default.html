@@ -47,7 +47,34 @@
      </header>
     </div>
 
+<div class="containerall" role="main" id="main">
+ {{content}}
 
+  <footer class="footer">
+      <div class="grid" id="bottom">
+
+       <div class="unit unit-s-1 unit-m-1 unit-l-1-2">
+         <ul class="footer-menu">
+          <li>
+               <li><a class="footer" href="#">HOME</a></li>
+               <li><a class="footer" href="#">ABOUT US</a></li>
+               <li><a class="footer" href="#">SERVICES</a></li>
+               <li><a class="footer" href="#">RESOURCES & TOOLS</a></li>
+               <li><a class="footer" href="#">ABOUT WORKPLACE CONFLICT</a></li>
+                <li><a class="footer" href="#">CONTACT US</a></li>
+          </li>
+        </ul>
+        </div>
+
+       <div id="content" class="unit unit-s-1 unit-m-1 unit-l-1-2">
+            <p class="footer_copyright" ><small>© Auto Trim Design & Signs</small><a class="privacy" href="#"><small>-Privacy / Legal</small></a></p>
+        </div>
+    </div>
+
+
+  </footer>
+
+  </div>
 
 <!-- nav small screens  -->
     <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
@@ -80,9 +107,19 @@ $(document).ready(function () {
 });
   </script>
 
-<!-- slider  -->
+<!-- home slider  -->
+<script src="{{site.baseurl}}/js/responsiveslides.min.js"></script>
+  <script>
+    // You can also use "$(window).load(function() {"
+    $(function () {
 
+      // Slideshow 1
+      $("#slider1").responsiveSlides({
+        speed: 800
+      });
 
+    });
+  </script>
 
 </body>
 </html>
