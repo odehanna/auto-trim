@@ -474,7 +474,13 @@ a {
   max-width: none;
   }
 
+.callbacks_nav{
+	display: none;
+}
+
+@media screen and (min-width: 800px) {
 .callbacks_nav {
+	display: block;
   position: absolute;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   top: 52%;
@@ -489,6 +495,7 @@ a {
   background: transparent url("{{site.baseurl}}/themes/themes.gif") no-repeat left top;
   margin-top: -45px;
   }
+}
 
 .callbacks_nav:active {
   opacity: 1.0;
