@@ -6,4 +6,5 @@
 {% include css/normalize.css %}
 {% include css/reset.css %}
 {% include css/jquery.mmenu.css %}
+{% include css/jquery.bxslider.css %}
 
