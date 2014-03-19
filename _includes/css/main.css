@@ -16,7 +16,9 @@ body{
   line-height: 1.428571429;
 }
 
-
+.wrapper{
+  display: block;
+}
 
  p,
  h2,
@@ -588,8 +590,6 @@ display: none;
 
 /* BOTTOM ------------------------------------------------------------*/
 #bottom {
-  background-image: url(../img/ticks.png);
-  background-repeat: repeat;
   background-color: #e2e1e1;
   position: relative;
   min-height: 20px;
