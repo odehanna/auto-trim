@@ -67,3 +67,21 @@ img{
 	margin-top: 1rem;
 }
 }
+
+.sidebar {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: rgba(255,255,255,.5);
+  background-color: #202020;
+}
+
+@media (min-width: 500px) {
+  .sidebar {
+    position: fixed;
+    bottom: 370px;
+    right: 0;
+    bottom: 0;
+    width: 18rem;
+    text-align: left;
+  }
+}
