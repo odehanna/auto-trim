@@ -36,6 +36,9 @@
 .unit-s-1{
 	width: 100%;
 }
+.unit-s-1-2{
+	width: 50%;
+}
 
 @media only screen and (min-width: 800px){
 	.unit-m-1-2{
