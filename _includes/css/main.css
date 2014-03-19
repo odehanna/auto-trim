@@ -175,7 +175,7 @@ h1  {
 
 @media only screen and (min-width: 1200px){
   .logo{
-  min-height: 150px;
+  min-height: 170px;
 }
 }
 @media only screen and (min-width: 1300px){
@@ -185,7 +185,7 @@ h1  {
 }
 @media only screen and (min-width: 1400px){
   .logo{
-  min-height: 184px;
+  min-height: 190px;
 }
 }
 

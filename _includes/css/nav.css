@@ -25,7 +25,7 @@ pre
 	text-align: center;
 	line-height: 40px;
 	height: 0px;
-	padding: 0 50px;
+
 }
 #header a,
 .header a
@@ -80,36 +80,51 @@ margin: 0 auto 0 auto;
 
 .navigation {
 margin:0;
-padding:0 5px 10px 5px;
+padding:0 5px 10px 1px;
 text-align: center;
 list-style:none;
+float: left;
 }
 
 /* Little tricking with positions */
 .navigation li {
 display: inline-block; /* Show list items inline */
-width:150px;
+width:140px;
 position:relative;
-
 }
 
 @media only screen and (min-width: 1300px){
 	.navigation li {
-width:180px;
+width:140px;
 }
 	}
 
 @media only screen and (min-width: 1400px){
 	.navigation li {
+width:150px;
+}
+	}
+
+	@media only screen and (min-width: 1500px){
+	.navigation li {
+width:160px;
+}
+	}
+
+
+
+		@media only screen and (min-width: 2000px){
+	.navigation li {
 width:200px;
 }
 	}
+
 /* Playing with Main Categories */
 .navigation li a {
   background-image: url(../img/cream_pixels.png);
   background-repeat: repeat;
 font-family: 'Archivo Narrow', sans-serif;
-font-size: 1.2rem;
+font-size: 1rem;
 color:#1f090d;
 display:block; /* Making sure a element covers whole li area */
 padding:0px;
@@ -117,6 +132,18 @@ text-decoration:none; /* No underline */
 text-align:center;
 text-transform:uppercase;
 }
+
+@media only screen and (min-width: 1400px){
+.navigation li a {
+font-size: 1.2rem;
+}
+	}
+
+@media only screen and (min-width: 1800px){
+.navigation li a {
+font-size: 1.4rem;
+}
+	}
 .navigation li a:hover {
 color:#cb1c2b;
 }
