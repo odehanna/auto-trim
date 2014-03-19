@@ -167,7 +167,7 @@ h1  {
 }
 }
 
-.logo {
+.logo{
 
 	/*min-height: 250px;*/  /* Gives height to the top  bar */
 	min-height: 100px;
@@ -231,7 +231,7 @@ h1  {
 
 @media screen and (min-width: 800px) {
 	.logo{
-	min-height: 150px;
+	min-height: 110px;
 	}
 }
 
@@ -461,7 +461,32 @@ a {
   border: 0;
   }
 
-.callbacks .caption {
+.caption{
+display: none;
+}
+
+@media screen and (min-width: 700px) {
+.caption {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  font-size: 1rem;
+  font-family: 'Archivo Narrow', sans-serif;
+  text-shadow: none;
+  color: #fff;
+  background: #000;
+  background: rgba(0,0,0, .6);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 10px 20px;
+  margin: 0;
+  max-width: none;
+  }
+}
+
+
+.callbacks{
   display: block;
   position: absolute;
   z-index: 2;
@@ -537,6 +562,36 @@ a {
     }
   }
 
+/*==================================================
+ * Slideshow DropShodow
+ * ===============================================*/
+.box {
+  width:100%;
+}
+
+
+.effect6
+{
+    position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.effect6:before, .effect6:after
+{
+  content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:50%;
+    bottom:0;
+    left:10px;
+    right:10px;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
 
 
 /* BOTTOM ------------------------------------------------------------*/

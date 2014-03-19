@@ -1,37 +1,4 @@
-html, body
-{
-	padding: 0;
-	margin: 0;
-}
-body {
-	background-image: url(../img/cream_pixels.png);
-	background-repeat: repeat;
-	background-color: #.navigation li a .navigation li a .navigation li a ;
-	-webkit-text-size-adjust: none;
-}
-body *
-{
-	text-shadow: none;
-}
-h1, h2, h3, h4, h5, h6
-{
-	line-height: 1;
-	color: #e2e1e1;
-	font-weight: bold;
-	margin: 20px 0 10px 0;
-}
-h1, h2, h3
-{
-	font-size: 18px;
-}
-h4, h5, h6
-{
-	font-size: 16px;
-}
-p
-{
-	margin: 0 0 10px 0;
-}
+
 a, a:link, a:active, a:visited, a:hover
 {
 	color: #ec2024;
@@ -127,8 +94,9 @@ position:relative;
 
 /* Playing with Main Categories */
 .navigation li a {
-background:rgba(255,255,255,0.5);
-font-size: 1rem;
+background:rgba(255,255,255,0.7);
+font-family: 'Archivo Narrow', sans-serif;
+font-size: 1.2rem;
 color:#1f090d;
 display:block; /* Making sure a element covers whole li area */
 padding:8px 7px 8px 7px;
@@ -169,7 +137,7 @@ border-bottom:1px solid #d8d8d8;
 }
 
 #sub{
-font-size: 0.8rem;
+font-size: 0.9rem;
 padding:18px 7px 10px 7px;
 }
 
