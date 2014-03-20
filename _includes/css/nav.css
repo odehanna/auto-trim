@@ -2,7 +2,6 @@
 a, a:link, a:active, a:visited, a:hover
 {
 	color: #ec2024;
-	text-decoration: underline;
 }
 pre
 {
@@ -27,6 +26,12 @@ pre
 	height: 0px;
 
 }
+
+.footer{
+	margin-top: 3rem;
+}
+
+
 #header a,
 .header a
 {
@@ -84,13 +89,15 @@ padding:0 5px 10px 1px;
 text-align: center;
 list-style:none;
 float: left;
+
 }
 
 /* Little tricking with positions */
 .navigation li {
 display: inline-block; /* Show list items inline */
-width:140px;
+width:130px;
 position:relative;
+
 }
 
 @media only screen and (min-width: 1300px){
@@ -129,8 +136,9 @@ color:#1f090d;
 display:block; /* Making sure a element covers whole li area */
 padding:0px;
 text-decoration:none; /* No underline */
-text-align:center;
+text-align:left;
 text-transform:uppercase;
+padding-left: 12px;
 }
 
 @media only screen and (min-width: 1400px){
@@ -161,14 +169,14 @@ z-index: 2000;
 }
 
 .navigation ul li {
-width:170px;
-float:center;
+width:300px;
+float:left;
 border-top:none;
 }
 
 @media only screen and (min-width: 1400px){
 .navigation ul li {
-width:200px;
+width:300px;
 
 }
 	}

@@ -1,7 +1,63 @@
 
 .unit {
   float: left;
-  background-color: #fff
+
+}
+
+.grid{
+  display: block;
+}
+
+
+
+
+.rounded_corners{
+  width:100%;
+  background:#fff;
+  margin:40px auto;
+}
+
+/*==================================================
+ * Effect 2
+ * ===============================================*/
+.effect2
+{
+  position: relative;
+}
+.effect2:before, .effect2:after
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 25px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 35px 20px #777;
+  -moz-box-shadow: 0 35px 20px #777;
+  box-shadow: 0 35px 20px #777;
+  -webkit-transform: rotate(-8deg);
+  -moz-transform: rotate(-8deg);
+  -o-transform: rotate(-8deg);
+  -ms-transform: rotate(-8deg);
+  transform: rotate(-8deg);
+}
+.effect2:after
+{
+  -webkit-transform: rotate(8deg);
+  -moz-transform: rotate(8deg);
+  -o-transform: rotate(8deg);
+  -ms-transform: rotate(8deg);
+  transform: rotate(8deg);
+  right: 10px;
+  left: auto;
+}
+
+
+.media{
+  padding: 20px;
 }
 
 .grid-bottom {
@@ -24,9 +80,9 @@
 
 
 .gutter{
-	padding-left: 2rem;
-	padding-right: 2rem;
-	padding-bottom: 2rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+
 }
 
 .unit-s-1{
@@ -64,14 +120,11 @@ img{
 }
 }
 
-.sidebar {
-  text-align: center;
-  padding: 2rem 1rem;
-  color: rgba(255,255,255,.5);
-  background-color: #202020;
-}
 
-@media only screen and (min-width: 600px){
+
+
+
+@media only screen and (min-width: 900px){
 .span8{
   width:70%;
 }
