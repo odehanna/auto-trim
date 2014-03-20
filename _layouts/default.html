@@ -47,20 +47,26 @@
       </header>
     </div>
 
+ {% include slide.html %}
+
 <!-- home content  -->
     <div class="containerall" role="main" id="main">
       <div class="row-fluid">
+          <div class="span8">
 
       {{content}}
 
-     </div>
-       <div class="sidebar unit">
-        <div class="sidebar-sticky">
-          {% include sidebar.html %}
-       </div>
+          </div>
+
+      <div class="span4">
+
+        {% include sidebar.html %}
+
+      </div>
     </div>
 
 
+    <hr class="featurette-divider">
 
 
     <!-- FOORER -->
@@ -90,6 +96,15 @@
   </footer>
 
   </div>
+
+
+
+
+
+
+
+
+
 
 
 
@@ -148,6 +163,16 @@ $(document).ready(function () {
       });
     });
   </script>
+
+  <!-- contact form -->
+<script language="JavaScript">
+var frmvalidator  = new Validator("contactform");
+frmvalidator.addValidation("name","req","Please provide your name");
+frmvalidator.addValidation("email","req","Please provide your email");
+frmvalidator.addValidation("email","email",
+  "Please enter a valid email address");
+</script>
+
 
 </body>
 </html>
