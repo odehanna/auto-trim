@@ -2,9 +2,7 @@
 #feedback-page{
   text-align:center;
 }
-.form{
 
-}
 
 #form-main{
   width:100%;
@@ -111,7 +109,7 @@ input:focus, textarea:focus {
   width: 100%;
   border: #cb1c2c solid 4px;
   cursor:pointer;
-  background-color: #aeaeae;
+  background-color: #464646;
   color:white;
   font-size:24px;
   padding-top:22px;

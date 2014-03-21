@@ -157,8 +157,7 @@ h1  {
     letter-spacing: 0.5px;
     font-size: 3rem;
     margin-bottom: 2rem;
-
-    color: #a03021;
+    color: #d30505;
 }
 @media only screen and (min-width: 30rem){
 .heading-first{
@@ -575,7 +574,7 @@ display: none;
 {
   content:"";
     position:absolute;
-    z-index:-1;
+    z-index: 1;
     -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
     -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
     box-shadow:0 0 20px rgba(0,0,0,0.8);
@@ -617,6 +616,7 @@ display: none;
 text-align: center;
 clear: both;
 background-color: #000;
+padding-top: 1rem;
 }
 
 .footer_copyright{
@@ -684,6 +684,7 @@ a.footer:hover
 .map-big iframe {
   width:100%;
   height: 200px;
+  padding-bottom: 2rem;
 
 }
 
@@ -698,3 +699,72 @@ a.footer:hover
   margin: 10px auto;
     background-color: #313030;
 }
+
+#contact{
+padding-bottom: 1.5rem;
+}
+
+#address{
+  float: left;
+  margin-right: 5px;
+  margin-left: 18px;
+}
+
+.grey{
+  color: #fff;
+}
+
+h3{
+  font-size: 0.9rem;
+  font-weight: 300;
+  font-family: 'Archivo Narrow', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  line-height: 1.4em;
+  display: block;
+  -webkit-margin-before: 1em;
+-webkit-margin-after: 1em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+}
+
+.verticalLine{
+  border-bottom: 2px solid #d30505;
+  margin-right: 30px;
+}
+
+#contact{
+  float: left;
+  margin-left: 18px;
+
+}
+
+.blue{
+  color:#d30505;
+}
+
+.white{
+  color: #fff;
+}
+
+#mail-link{
+   font-size: 0.7rem;
+   color: #fff;
+    letter-spacing: .1rem;
+}
+
+@media (min-width: 900px){
+  #mail-link{
+   font-size: 0.9rem;
+ }
+}
+
+
+#mail-link:link {
+  color: #fff;
+   }
+#mail-link:hover {
+  color: #d30505;
+  text-decoration: underline;
+}
+
