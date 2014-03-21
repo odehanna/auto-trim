@@ -36,21 +36,70 @@
 
 
   <body id="top">
-    <div class="headercontent">
-      <header id="masthead">
-        <div class="logo">
-          <a href="{{site.baseurl}}/" rel="home"><img src="{{site.baseurl}}/img/logo2.png" alt="Auto Trim Logo"></a>
-        </div>
 
-{% include nav.html %}
+      <div id="header">
+        <a href="#menu"></a>
+      </div>
 
-      </header>
-    </div>
+      <!-- nav small screens  -->
+      <nav id="menu">
+        <ul>
+          <li><a href="#">HOME</a></li>
 
- {% include slide.html %}
+          <li class="Selected">
+            <a href="{{site.baseurl}}/about">BRANDING</a>
+            <ul>
+              <li><a href="{{site.baseurl}}/fleet">Fleet</a></li>
+              <li><a href="{{site.baseurl}}/custom">Custom</a></li>
+              <li><a href="{{site.baseurl}}/vehicle-lettering">Vehicle Lettering</a></li>
+            </ul>
+          </li>
+
+          <li class="Selected">
+            <a href="{{site.baseurl}}/services">SIGNS</a>
+            <ul>
+              <li><a href="#">Banners/Signs</a></li>
+              <li><a href="{{site.baseurl}}/organizational-assessments">Pop Displays</a></li>
+              <li><a href="{{site.baseurl}}/conflict-diagnostic">Signage</a></li>
+              <li><a href="#">Wall Graphics</a></li>
+            </ul>
+          </li>
+
+          <li class="Selected">
+            <a href="#">SERVICES</a>
+            <ul>
+              <li><a href="#">Design</a></li>
+              <li><a href="#">Printing</a></li>
+              <li><a href="#">Installation</a></li>
+            </ul>
+          </li>
+
+            <li><a href="#">CONTRACTORS</a></li>
+
+            <li><a href="#">CONTACT US</a></li>
+        </ul>
+      </nav>
+
+
+
+
+    <div class="containerall" role="main" id="main">
+
+      <div class="headercontent">
+        <header id="masthead">
+          <div class="logo">
+            <a href="{{site.baseurl}}/" rel="home"><img src="{{site.baseurl}}/img/logo2.png" alt="Auto Trim Logo"></a>
+          </div>
+
+      {% include nav.html %}
+
+        </header>
+      </div>
+
+    {% include slide.html %}
 
 <!-- home content  -->
-    <div class="containerall" role="main" id="main">
+
       <div class="row-fluid">
           <div class="span8">
 
@@ -67,23 +116,21 @@
 
 
 
-
     <!-- FOORER -->
+    <footer class="footer">
+      <div id="push"></div>
+        <div class="grid" id="bottom">
 
-  <footer class="footer">
-    <div id="push"></div>
-      <div class="grid" id="bottom">
 
-
-       <div id="content" class="unit unit-s-1 unit-m-1 unit-l-1-2">
-          <div id="top"><a href="#top">&mdash; BACK TO TOP&mdash; </a> </div>
-            <p class="footer_copyright" ><small>© AUTO TRIM DESIGN & SIGNS</small><a class="privacy" href="#"><small>-Privacy / Legal</small></a></p>
-          </div>
+         <div id="content" class="unit unit-s-1 unit-m-1 unit-l-1-2">
+            <div id="top"><a href="#top">&mdash; BACK TO TOP&mdash; </a> </div>
+              <p class="footer_copyright" ><small>© AUTO TRIM DESIGN & SIGNS</small><a class="privacy" href="#"><small>-Privacy / Legal</small></a></p>
+            </div>
+        </div>
       </div>
-    </div>
 
 
-  </footer>
+    </footer>
 
   </div>
 

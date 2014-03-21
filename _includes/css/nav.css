@@ -95,36 +95,10 @@ float: left;
 /* Little tricking with positions */
 .navigation li {
 display: inline-block; /* Show list items inline */
-width:130px;
 position:relative;
-
+margin-right: 2em;
 }
 
-@media only screen and (min-width: 1300px){
-	.navigation li {
-width:140px;
-}
-	}
-
-@media only screen and (min-width: 1400px){
-	.navigation li {
-width:150px;
-}
-	}
-
-	@media only screen and (min-width: 1500px){
-	.navigation li {
-width:160px;
-}
-	}
-
-
-
-		@media only screen and (min-width: 2000px){
-	.navigation li {
-width:200px;
-}
-	}
 
 /* Playing with Main Categories */
 .navigation li a {
@@ -172,6 +146,7 @@ z-index: 2000;
 width:300px;
 float:left;
 border-top:none;
+margin-right: 0;
 }
 
 @media only screen and (min-width: 1400px){

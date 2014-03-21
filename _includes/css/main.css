@@ -6,8 +6,6 @@ html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
-  background-image: url(../img/cream_pixels.png);
-  background-repeat: repeat;
 }
 
 body{
@@ -212,12 +210,15 @@ h1  {
 
 
 .containerall{
+  background-image: url(../img/cream_pixels.png);
+  background-repeat: repeat;
   width: 100%;
+  clear: both;
 }
 
 @media only screen and (min-width: 1200px){
 .containerall{
-  margin: 35px auto -35px auto; /* Keeps it centered */
+  margin: 0 auto -35px auto; /* Keeps it centered */
 }
 }
 
@@ -609,19 +610,20 @@ display: none;
 }
 #bottom #content a:hover {
   text-decoration: none;
-  color: #373737;
+  color: #fff;
 }
 
 .footer{
 text-align: center;
-
+clear: both;
+background-color: #000;
 }
 
 .footer_copyright{
    padding-top: 15px;
   padding-bottom: 10px;
   text-align: center;
-  color: #56555a;
+  color: #fff;
   font-size: 1rem;
   line-height: 0.5em;
   clear: both;
@@ -681,6 +683,18 @@ a.footer:hover
 
 .map-big iframe {
   width:100%;
+  height: 200px;
 
 }
 
+@media (min-width: 900px){
+  .map-big iframe {
+  padding-left: 15px;
+
+}
+  }
+
+.center{
+  margin: 10px auto;
+    background-color: #313030;
+}
