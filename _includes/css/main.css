@@ -211,6 +211,7 @@ h1  {
 .containerall{
   background-image: url(../img/cream_pixels.png);
   background-repeat: repeat;
+  z-index: 2
   width: 100%;
   clear: both;
 }
