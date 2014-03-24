@@ -729,6 +729,21 @@ h3{
 -webkit-margin-end: 0px;
 }
 
+h4{
+  font-size: 1.5rem;
+  font-weight: 300;
+  font-family: 'Archivo Narrow', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  line-height: 1.1em;
+  display: block;
+  -webkit-margin-before: 1em;
+-webkit-margin-after: 1em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+}
+
+
 .verticalLine{
   border-bottom: 2px solid #d30505;
   margin-right: 30px;
