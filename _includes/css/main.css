@@ -743,6 +743,23 @@ h4{
 -webkit-margin-end: 0px;
 }
 
+h5{
+  color:#56575b;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: 'Archivo Narrow', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  line-height: 1.1em;
+  display: block;
+  -webkit-margin-before: 1em;
+-webkit-margin-after: 1em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+}
+
+
+
 
 .verticalLine{
   border-bottom: 2px solid #d30505;
@@ -784,3 +801,19 @@ h4{
   text-decoration: underline;
 }
 
+@media (min-width: 400px){
+#contractor{
+ width: 40%;
+ padding-bottom: 1rem;
+}
+}
+
+@media (min-width: 900px){
+  #contractor{
+  width: 20%;
+}
+}
+
+#info p{
+  text-align: left;
+}

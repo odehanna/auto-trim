@@ -36,9 +36,7 @@ img{
 	width: 100%;
 }
 
-.img-flex{
-	padding-bottom: 1.5rem;
-}
+
 
 @media only screen and (min-width: 900px){
 .img-flex{
@@ -103,6 +101,8 @@ img{
   display: inline-block;
   visibility: visible;
 }
+
+
 
 .grid-bottom .unit {
   vertical-align: bottom;
