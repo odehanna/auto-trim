@@ -817,3 +817,8 @@ h5{
 #info p{
   text-align: left;
 }
+
+.list-unstyled {
+padding-left: 0;
+list-style: none;
+}

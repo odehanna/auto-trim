@@ -225,7 +225,44 @@ frmvalidator.addValidation("email","email",
  <script src="{{site.baseurl}}/js/lightGallery.js"></script>
  <script type="text/javascript">
   $(document).ready(function() {
-    $("#lightGallery").lightGallery();
+    $("#lightGallery").lightGallery({
+
+      mode:'slide',
+      useCSS : true,
+      easing: 'ease',//'cubic-bezier(0.25, 0, 0.25, 1)',//
+      speed: 1000,
+      loop: false,
+      auto: false,
+      pause: 4000,
+      escKey:true,
+
+      exThumbImage: false,
+      thumbnail: true,
+      caption:false,
+      desc:false,
+      controls:true,
+      hideControlOnEnd:false,
+      mobileSrc: false,
+      mobileSrcMaxWidth :640,
+
+        //touch
+      swipeThreshold: 50,
+
+      rel:false,
+      dynamic:false,
+      dynamicEl : [],
+
+            //callbacks
+      onOpen: function() {},
+      onSlideBefore: function() {},
+      onSlideAfter: function() {},
+      onSlideNext: function() {},
+      onSlidePrev: function() {},
+      onBeforeClose: function(){},
+      onCloseAfter: function(){}
+
+    });
+
   });
 </script>
 

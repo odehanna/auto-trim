@@ -410,7 +410,7 @@
 	#lightGallery-Gallery .thumb_cont .thumb {
 		width: 94px;
 		height: 94px;
-	}	
+	}
 }
 #lightGallery-Gallery .thumb_cont .thumb > img {
 	height: auto;
@@ -507,6 +507,7 @@
 	-ms-transition: background-color 0.3s ease;
 	transition: background-color 0.3s ease;
 }
+
 #lightGallery-close:after {
     position: absolute;
     right: 6px;
@@ -516,3 +517,38 @@
 	text-decoration: none;
 	background-color: #000;
 }
+
+.gallery{
+	clear: both;
+margin-bottom: 2rem;
+}
+
+
+.gallery li {
+width: 100px;
+display: block;
+float: left;
+margin-right: 6px;
+margin-bottom: 6px;
+text-align: -webkit-match-parent;
+}
+
+@media screen and (min-width: 900px) {
+	.gallery li {
+width: 180px;
+}
+	}
+
+.list-unstyled {
+list-style: none;
+}
+
+.gallery li a img {
+max-width: 100px;
+}
+
+img {
+vertical-align: middle;
+}
+
+
