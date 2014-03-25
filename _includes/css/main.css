@@ -209,7 +209,7 @@ h1  {
 
 
 .containerall{
-  background-image: url(../img/cream_pixels.png);
+  background-image: url(../img/az_subtle.png);
   background-repeat: repeat;
   z-index: 2
   width: 100%;
@@ -773,7 +773,7 @@ h5{
   border-bottom: 2px solid #d30505;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 900px) {
 .verticalLine{
   margin-right: 160px;
 }

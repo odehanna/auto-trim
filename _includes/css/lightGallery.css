@@ -531,7 +531,7 @@ float: left;
 margin-right: 6px;
 margin-bottom: 6px;
 text-align: -webkit-match-parent;
-border: 2px solid #555656;
+border: 3px solid #fff;
 }
 
 @media screen and (min-width: 400px) {
