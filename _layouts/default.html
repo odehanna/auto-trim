@@ -221,16 +221,17 @@ frmvalidator.addValidation("email","email",
 
  <!-- inside lightbox -->
  <script src="{{site.baseurl}}/js/lightGallery.js"></script>
-<script type="text/javascript">
+ <script type="text/javascript">
   $(document).ready(function() {
     $("#lightGallery").lightGallery({
+
       mode:'slide',
       useCSS : true,
       easing: 'ease',//'cubic-bezier(0.25, 0, 0.25, 1)',//
       speed: 1000,
-      loop: false,
-      auto: false,
-      pause: 4000,
+      loop: true,
+      auto: true,
+      pause: 3000,
       escKey:true,
 
       exThumbImage: false,
@@ -242,19 +243,14 @@ frmvalidator.addValidation("email","email",
       mobileSrc: false,
       mobileSrcMaxWidth :640,
 
-      //touch
+        //touch
       swipeThreshold: 50,
 
       rel:false,
       dynamic:false,
       dynamicEl : [],
 
-      //video
-      vimeoColor : 'CCCCCC',
-      videoAutoplay:true,
-      videoMaxWidth:855,
-
-      //callbacks
+            //callbacks
       onOpen: function() {},
       onSlideBefore: function() {},
       onSlideAfter: function() {},
@@ -262,9 +258,14 @@ frmvalidator.addValidation("email","email",
       onSlidePrev: function() {},
       onBeforeClose: function(){},
       onCloseAfter: function(){}
-    );
+
+
+
+    });
+
   });
 </script>
+
 </body>
 </html>
 
