@@ -525,17 +525,24 @@ margin-bottom: 2rem;
 
 
 .gallery li {
-width: 100px;
+width: 50px;
 display: block;
 float: left;
 margin-right: 6px;
 margin-bottom: 6px;
 text-align: -webkit-match-parent;
+border: 2px solid #555656;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 400px) {
 	.gallery li {
-width: 180px;
+width: 100px;
+}
+	}
+
+	@media screen and (min-width: 900px) {
+	.gallery li {
+width: 140px;
 }
 	}
 
