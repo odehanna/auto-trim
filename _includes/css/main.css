@@ -771,7 +771,12 @@ h5{
 
 .verticalLine{
   border-bottom: 2px solid #d30505;
-  margin-right: 30px;
+}
+
+@media screen and (min-width: 600px) {
+.verticalLine{
+  margin-right: 160px;
+}
 }
 
 #contact{
