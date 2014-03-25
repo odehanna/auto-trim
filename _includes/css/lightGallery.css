@@ -257,8 +257,11 @@
 	margin-left: -55px;
 	z-index: 9;
 }
+#lightGallery-action a {
+	display:none;
+}
 
-
+@media only screen and (min-width: 600px){
 #lightGallery-action a {
 	margin: 0 3px 0 0 !important;
 	-webkit-border-radius: 2px;
@@ -281,6 +284,7 @@
 	font-family: 'Slide-icons';
 	color: #FFF;
 	cursor: pointer;
+}
 }
 
 #lightGallery-action a.disabled {

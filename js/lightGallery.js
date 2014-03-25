@@ -16,7 +16,7 @@
 				speed: 1000,
 				loop: false,
 				auto: false,
-				pause: 4000,
+				pause: 5,
 				escKey:true,
 				rel:false,
 				lang:{
@@ -33,12 +33,12 @@
 
 				//touch
 				swipeThreshold: 50,
-				
+
 				vimeoColor : 'CCCCCC',
 				videoAutoplay:true,
 				videoMaxWidth:855,
 				dynamic:false,
-				
+
 				//callbacks
 				dynamicEl : [],
 				onOpen: function() {},
@@ -61,12 +61,12 @@
 			init: function(){
 				el.each(function() {
 					var $this = $(this);
-                	
+
 					if(settings.dynamic == true){
 						$children = settings.dynamicEl;
 						index = 0;
 						prevIndex = index;
-						setUp.init(index);	
+						setUp.init(index);
 					} else{
 						$children = $(this).children();
 						$children.click(function(e){
@@ -81,18 +81,18 @@
 							index = $children.index(this);
 							prevIndex = index;
 							setUp.init(index);
-						}); 
+						});
 					}
                 });
-			},	
+			},
 		};
 		var setUp = {
 			init: function(){
-				this.start();	
+				this.start();
 				this.build();
 			},
 			start: function(){
-				this.structure();	
+				this.structure();
 				this.touch();
 				this.enableTouch();
 				this.getWidth();
@@ -103,7 +103,7 @@
 				this.addCaption();
 				this.addDesc();//description
 				this.slideTo();
-				this.buildThumbnail();	
+				this.buildThumbnail();
 				this.keyPress();
 				this.slide(index);
 				setTimeout(function(){
@@ -118,8 +118,8 @@
 				var slideList = '';
 				if(settings.dynamic == true){
 					for(var i = 0; i<settings.dynamicEl.length; i++){
-						slideList += '<div class="lightGallery-slide"></div>';	
-					}	
+						slideList += '<div class="lightGallery-slide"></div>';
+					}
 				}else{
 					$children.each(function() {
 						slideList += '<div class="lightGallery-slide"></div>';
@@ -127,13 +127,13 @@
 				}
 				$slider.append(slideList);
 				$slide = $gallery.find('.lightGallery-slide');
-			},		
+			},
 			closeSlide: function(){
 				var $this = this;
 				$('#lightGallery-close').bind('click touchend', function(){
 					$this.destroy();
 				});
-			},	
+			},
 			getWidth: function(){
 				var resizeWindow = function(){
 					windowWidth = $(window).width();
@@ -162,8 +162,8 @@
 					var $this = this,
 					distance,
 					swipeThreshold = settings.swipeThreshold,
-					startCoords = {}, 
-					endCoords = {};					
+					startCoords = {},
+					endCoords = {};
 					$('body').bind('touchstart', function(e){
 						$(this).addClass('touch');
 		  				endCoords = e.originalEvent.targetTouches[0];
@@ -172,7 +172,7 @@
 							e.preventDefault();
 							e.stopPropagation();
 		    				endCoords = e.originalEvent.targetTouches[0];
-						});	
+						});
 			           	return false;
 	           			}).bind('touchend',function(e){
 	           				e.preventDefault();
@@ -186,7 +186,7 @@
 	       						$this.nextSlide();
 								clearInterval(interval);
 	       					}
-	       					$('.touch').off('touchmove').removeClass('touch');						
+	       					$('.touch').off('touchmove').removeClass('touch');
 					});
            		}
 			},
@@ -201,7 +201,7 @@
 				$('.lightGallery').bind('mouseup',function(e){
 					e.stopPropagation();
 					e.preventDefault();
-					xEnd = e.pageX; 
+					xEnd = e.pageX;
 					if(xEnd-xStart>20){
 						$this.prevSlide();
 					}else if(xStart-xEnd>20){
@@ -222,25 +222,25 @@
 				var video = '';
 				if(youtube){
 					if(settings.videoAutoplay === true && a === true){
-						a = '?autoplay=1&rel=0&wmode=opaque';	
+						a = '?autoplay=1&rel=0&wmode=opaque';
 					}else{
 						a = '?wmode=opaque';
-					}	
-							
-					video = '<iframe id="video'+_id+'" width="560" height="315" src="//www.youtube.com/embed/'+youtube[1]+a+'" frameborder="0" allowfullscreen></iframe>';	
-									
+					}
+
+					video = '<iframe id="video'+_id+'" width="560" height="315" src="//www.youtube.com/embed/'+youtube[1]+a+'" frameborder="0" allowfullscreen></iframe>';
+
 				}else if(vimeo){
 					if(settings.videoAutoplay === true && a === true){
-						a = 'autoplay=1&amp;';	
+						a = 'autoplay=1&amp;';
 					}else{
-						a = '';	
+						a = '';
 					}
-					
+
 					video = '<iframe id="video'+_id+'" width="560" height="315"  src="http://player.vimeo.com/video/'+vimeo[1]+'?'+a+'byline=0&amp;portrait=0&amp;color='+settings.vimeoColor+'" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>';
-				
+
 				}
 				return '<div class="video_cont" style="max-width:'+settings.videoMaxWidth+'px !important;"><div class="video">'+video+'</div></div>';
-			},	
+			},
 			loadContent : function (index){
 				var $this = this;
 				var i,j,ob,l= $children.length - index;
@@ -248,19 +248,19 @@
 				$this.autoStart();
 				if(settings.mobileSrc===true && windowWidth <= settings.mobileSrcMaxWidth){
 					if(settings.dynamic == true){
-						src = settings.dynamicEl[0]['mobileSrc'];	
+						src = settings.dynamicEl[0]['mobileSrc'];
 					}else{
-						src = $children.eq(index).attr('data-responsive-src');	
+						src = $children.eq(index).attr('data-responsive-src');
 					}
 				}
 				else{
 					if(settings.dynamic == true){
-						src = settings.dynamicEl[0]['src'];	
+						src = settings.dynamicEl[0]['src'];
 					}else{
-						src = $children.eq(index).attr('data-src');	
+						src = $children.eq(index).attr('data-src');
 					}
 				}
-				if(!$this.isVideo(src)){ 
+				if(!$this.isVideo(src)){
 					$slide.eq(index).prepend('<img src="'+src+'" />');
 					ob = $('img');
 				}
@@ -273,23 +273,23 @@
 				}
 				if($children.length > 1){
 					$slide.eq(index).find(ob).on('load error',function(){
-						for (i=0; i<=index-1; i++){ 
+						for (i=0; i<=index-1; i++){
 							var src;
 							if(settings.mobileSrc===true && windowWidth <= settings.mobileSrcMaxWidth){
 								if(settings.dynamic == true){
-									src = settings.dynamicEl[index-i-1]['mobileSrc'];	
+									src = settings.dynamicEl[index-i-1]['mobileSrc'];
 								}else{
-									src = $children.eq(index-i-1).attr('data-responsive-src');		
+									src = $children.eq(index-i-1).attr('data-responsive-src');
 								}
 							}
 							else{
 								if(settings.dynamic == true){
-									src = settings.dynamicEl[index-i-1]['src'];	
+									src = settings.dynamicEl[index-i-1]['src'];
 								}else{
-									src = $children.eq(index-i-1).attr('data-src');	
+									src = $children.eq(index-i-1).attr('data-src');
 								}
 							}
-							if(!$this.isVideo(src)){ 
+							if(!$this.isVideo(src)){
 								$slide.eq(index-i-1).prepend('<img src="'+src+'" />');
 							}
 							else{
@@ -300,14 +300,14 @@
 							var src;
 							if(settings.mobileSrc===true && windowWidth <= settings.mobileSrcMaxWidth){
 								if(settings.dynamic == true){
-									src = settings.dynamicEl[index+j]['mobileSrc'];	
+									src = settings.dynamicEl[index+j]['mobileSrc'];
 								}else{
-									src = $children.eq(index+j).attr('data-responsive-src');		
+									src = $children.eq(index+j).attr('data-responsive-src');
 								}
 							}
 							else{
 								if(settings.dynamic == true){
-									src = settings.dynamicEl[index+j]['src'];	
+									src = settings.dynamicEl[index+j]['src'];
 								}else{
 									src = $children.eq(index+j).attr('data-src');
 								}
@@ -327,15 +327,15 @@
 					var i, title = false;
 					for(i=0;i < $children.length; i++){
 						if(settings.dynamic == true){
-							title = settings.dynamicEl[i]['caption'];	
+							title = settings.dynamicEl[i]['caption'];
 						}else{
 							title = $children.eq(i).attr('data-title');
 						}
 						if(typeof title == 'undefined' || title == null){
-							title = 'image '+i+'';	
+							title = 'image '+i+'';
 						}
 						$slide.eq(i).append('<div class="info group"><span class="title">'+title+'</span></div>');
-					}	
+					}
 				}
 			},
 			addDesc:function(){
@@ -343,7 +343,7 @@
 					var i, description = false;
 					for(i=0;i < $children.length; i++){
 						if(settings.dynamic == true){
-							description = settings.dynamicEl[i]['desc'];	
+							description = settings.dynamicEl[i]['desc'];
 						}else{
 							description = $children.eq(i).attr('data-desc');;
 						}
@@ -351,11 +351,11 @@
 							description = 'image '+i+'';
 						}
 						if(settings.caption === false){
-							$slide.eq(i).append('<div class="info group"><span class="desc">'+description+'</span></div>');	
+							$slide.eq(i).append('<div class="info group"><span class="desc">'+description+'</span></div>');
 						}else{
-							$slide.eq(i).find('.info').append('<span class="desc">'+description+'</span>');	
+							$slide.eq(i).find('.info').append('<span class="desc">'+description+'</span>');
 						}
-					}			
+					}
 				}
 			},
 			buildThumbnail: function(){
@@ -367,12 +367,12 @@
 					$gallery.find('.cLthumb').bind('click touchend', function(){
 						$thumb_cont.addClass('open');
 						if($this.doCss() && settings.mode === 'slide'){
-							$slide.eq(index).prevAll().removeClass('nextSlide').addClass('prevSlide');	
-							$slide.eq(index).nextAll().removeClass('prevSlide').addClass('nextSlide');	
+							$slide.eq(index).prevAll().removeClass('nextSlide').addClass('prevSlide');
+							$slide.eq(index).nextAll().removeClass('prevSlide').addClass('nextSlide');
 						}
 					});
 					$gallery.find('.close').bind('click touchend', function(){
-						$thumb_cont.removeClass('open');		
+						$thumb_cont.removeClass('open');
 					});
 					var thumbInfo = $gallery.find('.thumb_info');
 					var $thumb_inner = $gallery.find('.thumb_inner');
@@ -380,19 +380,19 @@
 					var thumbImg;
 					if(settings.dynamic == true){
 						for(var i = 0; i<settings.dynamicEl.length; i++){
-							thumbImg = settings.dynamicEl[i]['thumb'];	
-							thumbList += '<div class="thumb"><img src="'+thumbImg+'" /></div>';	
-						}	
+							thumbImg = settings.dynamicEl[i]['thumb'];
+							thumbList += '<div class="thumb"><img src="'+thumbImg+'" /></div>';
+						}
 					}else{
 						$children.each(function() {
 							if(settings.exThumbImage === false || typeof $(this).attr(settings.exThumbImage) == 'undefined' || $(this).attr(settings.exThumbImage) == null){
-									thumbImg = $(this).find('img').attr('src');	
+									thumbImg = $(this).find('img').attr('src');
 								}
 								else{
-										thumbImg = $(this).attr(settings.exThumbImage);	
+										thumbImg = $(this).attr(settings.exThumbImage);
 									}
 							thumbList += '<div class="thumb"><img src="'+thumbImg+'" /></div>';
-						});	
+						});
 					}
 					$thumb_inner.append(thumbList);
 					$thumb = $thumb_inner.find('.thumb');
@@ -403,17 +403,17 @@
 						$(this).addClass('active');
 						$this.slide(index);
 						clearInterval(interval);
-					});	
+					});
 					thumbInfo.prepend('<span class="ib count">'+settings.lang.allPhotos+' ('+$thumb.length+')</span>');
 				}
-				
+
 			},
 			slideTo : function(){
 				var $this = this;
 				if(settings.controls === true && $children.length > 1){
 					$gallery.append('<div id="lightGallery-action"><a id="lightGallery-prev"></a><a id="lightGallery-next"></a></div>');
 					$prev = $gallery.find('#lightGallery-prev');
-					$next = $gallery.find('#lightGallery-next');	
+					$next = $gallery.find('#lightGallery-next');
 					$prev.bind('click touchend', function(){
 						$this.prevSlide();
 						clearInterval(interval);
@@ -421,7 +421,7 @@
 					$next.bind('click touchend', function(){
 						$this.nextSlide();
 						clearInterval(interval);
-					});			
+					});
 				}
 			},
 			autoStart: function(){
@@ -436,7 +436,7 @@
 						}
 						index++;
 						$this.slide(index);
-					}, settings.pause);	
+					}, settings.pause);
 				}
 			},
 			keyPress : function(){
@@ -451,10 +451,10 @@
 					if (e.keyCode === 38 &&  settings.thumbnail===true){
 						if(!$thumb_cont.hasClass('open')){
 							if($this.doCss() && settings.mode === 'slide'){
-								$slide.eq(index).prevAll().removeClass('nextSlide').addClass('prevSlide');	
+								$slide.eq(index).prevAll().removeClass('nextSlide').addClass('prevSlide');
 								$slide.eq(index).nextAll().removeClass('prevSlide').addClass('nextSlide');
 							}
-							$thumb_cont.addClass('open');	
+							$thumb_cont.addClass('open');
 						}
 					}
 					else if (e.keyCode===39){
@@ -463,7 +463,7 @@
 					}
 					if (e.keyCode === 40 && settings.thumbnail===true){
 						if($thumb_cont.hasClass('open')){
-							$thumb_cont.removeClass('open');	
+							$thumb_cont.removeClass('open');
 						}
 					}
 					else if (settings.escKey === true && e.keyCode === 27) {
@@ -488,7 +488,7 @@
 						index = 0;
 						$this.slide(index);
 					}
-					else if(settings.mode==='fade' && settings.thumbnail===true && $children.length > 1){ 
+					else if(settings.mode==='fade' && settings.thumbnail===true && $children.length > 1){
 						$thumb_cont.addClass('open');
 					}
 				}
@@ -506,7 +506,7 @@
 						index = $children.length -1;
 						$this.slide(index);
 					}
-					else if(settings.mode==='fade' && settings.thumbnail===true && $children.length > 1){ 
+					else if(settings.mode==='fade' && settings.thumbnail===true && $children.length > 1){
 						$thumb_cont.addClass('open');
 					}
 				}
@@ -554,16 +554,16 @@
 				}
 				else if(settings.mode === 'fade'){
 					if(this.doCss() && !$slider.hasClass('fadeM')){
-						$slider.addClass('fadeM');	
+						$slider.addClass('fadeM');
 					}else if(!this.doCss() && !$slider.hasClass('animate')){
-							$slider.addClass('animate');	
+							$slider.addClass('animate');
 						}
 					if(!this.doCss() && !lightGalleryOn){
 						$slide.fadeOut(100);
 						$slide.eq(index).fadeIn(100);
 					}else if(!this.doCss() && lightGalleryOn){
 						$slide.eq(prevIndex).fadeOut(settings.speed,settings.easing);
-						$slide.eq(index).fadeIn(settings.speed,settings.easing);		
+						$slide.eq(index).fadeIn(settings.speed,settings.easing);
 					}
 				}
 				if(index+1 >= $children.length && settings.auto && settings.loop === false){
@@ -578,7 +578,7 @@
 						$slide.eq(index-1).addClass('prevSlide');
 						$slide.eq(index+1).addClass('nextSlide');
 					}else{
-						$slide.eq(index).prevAll().removeClass('nextSlide').addClass('prevSlide');	
+						$slide.eq(index).prevAll().removeClass('nextSlide').addClass('prevSlide');
 						$slide.eq(index).nextAll().removeClass('prevSlide').addClass('nextSlide');
 					}
 				}
@@ -586,7 +586,7 @@
 					$thumb.removeClass('active');
 					$thumb.eq(index).addClass('active');
 				}
-				
+
 				if(settings.controls && settings.hideControlOnEnd && settings.loop === false){
 					if(index === 0){
 						$prev.addClass('disabled');
@@ -594,8 +594,8 @@
 						$next.addClass('disabled');
 					}
 					else{
-						$prev.add($next).removeClass('disabled');		
-					}	
+						$prev.add($next).removeClass('disabled');
+					}
 				}
 				prevIndex = index;
 				lightGalleryOn === false ? settings.onOpen.call(this) : settings.onSlideAfter.call(this);
