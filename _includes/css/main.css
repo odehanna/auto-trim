@@ -598,13 +598,20 @@ display: none;
 #bottom #content {
   padding-bottom: 1rem;
   text-align: center;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   line-height: 1.2em;
   font-style: bold;
   clear: both;
     -webkit-tap-highlight-color:transparent !important;
   font-family: ‘Open Sans’, sans-serif; font-weight: 300;
 }
+
+@media screen and (min-width: 600px) {
+  #bottom #content {
+    font-size: 1.7rem;
+  }
+  }
+
 #bottom #content a {
   color: #cb1c2c;
 }
@@ -626,7 +633,7 @@ padding-top: 1rem;
   text-align: center;
   color: #fff;
   font-size: 1rem;
-  line-height: 0.5em;
+  line-height: 1.5em;
   clear: both;
     -webkit-tap-highlight-color:transparent !important;
   font-family: ‘Open Sans’, sans-serif; font-weight: 300;
@@ -730,6 +737,7 @@ h3{
 }
 
 h4{
+  color:#56575b;
   font-size: 1.2rem;
   font-weight: 500;
   font-family: 'Archivo Narrow', sans-serif;
@@ -786,7 +794,7 @@ h5{
     letter-spacing: .1rem;
 }
 
-@media (min-width: 900px){
+@media (min-width: 1200px){
   #mail-link{
    font-size: 0.9rem;
  }
@@ -816,6 +824,7 @@ h5{
 
 #info p{
   text-align: left;
+  padding-bottom: 2rem;
 }
 
 .list-unstyled {
