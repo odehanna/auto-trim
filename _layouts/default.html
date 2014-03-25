@@ -221,51 +221,11 @@ frmvalidator.addValidation("email","email",
 
  <!-- inside lightbox -->
  <script src="{{site.baseurl}}/js/lightGallery.js"></script>
- <script type="text/javascript">
+<script type="text/javascript">
   $(document).ready(function() {
-    $("#lightGallery").lightGallery({
-
-      mode:'slide',
-      useCSS : true,
-      easing: 'ease',//'cubic-bezier(0.25, 0, 0.25, 1)',//
-      speed: 1000,
-      loop: false,
-      auto: false,
-      pause: 3000,
-      escKey:true,
-
-      exThumbImage: false,
-      thumbnail: true,
-      caption:false,
-      desc:false,
-      controls:true,
-      hideControlOnEnd:false,
-      mobileSrc: true,
-      mobileSrcMaxWidth :940,
-
-        //touch
-      swipeThreshold: 50,
-
-      rel:false,
-      dynamic:false,
-      dynamicEl : [],
-
-            //callbacks
-      onOpen: function() {},
-      onSlideBefore: function() {},
-      onSlideAfter: function() {},
-      onSlideNext: function() {},
-      onSlidePrev: function() {},
-      onBeforeClose: function(){},
-      onCloseAfter: function(){}
-
-
-
-    });
-
+    $("#lightGallery").lightGallery();
   });
 </script>
-
 </body>
 </html>
 
