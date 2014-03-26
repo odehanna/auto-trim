@@ -28,7 +28,7 @@
 				desc:false,
 				controls:true,
 				hideControlOnEnd:false,
-				mobileSrc: false,
+				mobileSrc: true,
 				mobileSrcMaxWidth :640,
 
 				//touch
