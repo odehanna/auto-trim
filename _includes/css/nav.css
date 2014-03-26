@@ -162,7 +162,7 @@ border-top:none;
 border-bottom:1px solid #d8d8d8;
 }
 
-.sub{
+#header-big .sub{
 font-size: 0.9rem;
 padding:18px 12px 10px 12px;
 }
