@@ -101,7 +101,7 @@ hr {
        box-sizing: content-box;
 }
 
-#in{
+.in{
 
 width:80%;
  border-top: 1px solid #323232;
@@ -111,7 +111,7 @@ width:80%;
 
 
 @media only screen and (min-width: 30rem){
-  #in{
+  .in{
     display: none;
   }
   #in-big{
