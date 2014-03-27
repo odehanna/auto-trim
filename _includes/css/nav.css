@@ -100,7 +100,8 @@ margin-right: 2em;
 .navigation li a {
   background-image: url(../img/az_subtle.png);
   background-repeat: repeat;
-font-family: 'Archivo Narrow', sans-serif;
+font-family: 'Coda', cursive, sans-serif;
+font-weight: 800;
 font-size: 1rem;
 color:#1f090d;
 display:block; /* Making sure a element covers whole li area */

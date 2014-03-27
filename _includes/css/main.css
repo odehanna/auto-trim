@@ -14,8 +14,11 @@ body{
   line-height: 1.428571429;
 }
 
-
-
+#header {
+  background: url("{{site.baseurl}}/img/bg-header.png") no-repeat left top;
+  height:100%;
+  width:100%;
+}
  p,
  h2,
  h3 {
@@ -33,7 +36,6 @@ p{
   line-height: 1.5;
   font-size: 1.1rem;
 }
-
 
 
 .read_more{
@@ -155,10 +157,17 @@ h1  {
 .heading-first{
     line-height: 0.7;
     letter-spacing: 0.5px;
-    font-size: 3rem;
+    font-size: 2rem;
     margin-bottom: 2rem;
     color: #d30505;
 }
+@media only screen and (min-width: 300px){
+.heading-first{
+    font-size: 3rem;
+
+}
+}
+
 @media only screen and (min-width: 30rem){
 .heading-first{
   text-align: center;
@@ -173,9 +182,12 @@ h1  {
 
 @media only screen and (min-width: 1200px){
   .logo{
-  min-height: 170px;
+  background: url("{{site.baseurl}}/img/bg-header.png") no-repeat left top;
+  width:100%;
+  min-height: 180px;
 }
 }
+
 @media only screen and (min-width: 1300px){
   .logo{
   min-height: 170px;
@@ -776,9 +788,9 @@ h5{
 
 h6{
   color:#d30505;
-  font-size: 1.2rem;
-  font-weight: 500;
-  font-family: 'Archivo Narrow', sans-serif;
+  font-size: 0.75rem;
+  font-family: 'Coda', cursive, sans-serif;
+  font-weight: 800;
   text-transform: uppercase;
   letter-spacing: .1rem;
   line-height: 1.1em;
@@ -789,6 +801,18 @@ h6{
 -webkit-margin-end: 0px;
 }
 
+@media (min-width: 250px){
+  h6{
+   font-size: 1rem;
+ }
+}
+
+
+@media (min-width: 400px){
+  h6{
+   font-size: 1.3rem;
+ }
+}
 
 
 .verticalLine{
