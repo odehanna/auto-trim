@@ -81,7 +81,6 @@ img{
   margin: 0;
   padding: 0;
   letter-spacing: -0.31em;
-  text-rendering: optimizespeed;
   display: -webkit-flex;
   -webkit-flex-flow: row wrap;
   display: -ms-flexbox;
