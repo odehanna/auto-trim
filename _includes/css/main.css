@@ -685,8 +685,9 @@ a.footer:hover
 }
 
 /* MAP ------------------------------------------------------------*/
-.map-big iframe{
-
+iframe{
+  color: #fff;
+  text-align: left;
 }
 
 .map-big iframe {
