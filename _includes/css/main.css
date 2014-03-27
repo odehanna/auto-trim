@@ -685,6 +685,7 @@ a.footer:hover
         height: 0;
         overflow: hidden;
     }
+
     .google-maps iframe {
         position: absolute;
         top: 0;
