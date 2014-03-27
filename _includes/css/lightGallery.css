@@ -1,6 +1,6 @@
 /*clearfix*/
 .group {
- *zoom: 1;
+ zoom: 1;
 }
 .group:before, .group:after {
 	display: table;
