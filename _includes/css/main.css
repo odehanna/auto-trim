@@ -211,7 +211,7 @@ h1  {
 .containerall{
   background-image: url(../img/az_subtle.png);
   background-repeat: repeat;
-  z-index: 2
+  z-index: 2;
   width: 100%;
   clear: both;
 }
