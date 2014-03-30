@@ -82,7 +82,7 @@
 
 
     <div class="containerall" role="main" id="main">
-
+      <a href="#" class="scrollup">Scroll</a>
       <div class="headercontent">
         <header id="masthead">
           <div class="logo">
@@ -132,7 +132,6 @@
 
 
           <div id="content" class="unit unit-s-1 unit-m-1 unit-l-1-2">
-            <div class="top"><a href="#top">&mdash; BACK TO TOP&mdash;</a></div>
               <p class="footer_copyright" ><small>© AUTO TRIM DESIGN & SIGNS</small><a class="privacy" href="#"><small>-Privacy / Legal</small></a></p>
           </div>
         </div>
@@ -224,6 +223,26 @@ frmvalidator.addValidation("email","email",
   $(document).ready(function() {
     $("#lightGallery").lightGallery();
   });
+</script>
+
+ <!-- scroll -->
+<script type="text/javascript">
+    $(document).ready(function(){
+
+        $(window).scroll(function(){
+            if ($(this).scrollTop() > 100) {
+                $('.scrollup').fadeIn();
+            } else {
+                $('.scrollup').fadeOut();
+            }
+        });
+
+        $('.scrollup').click(function(){
+            $("html, body").animate({ scrollTop: 0 }, 600);
+            return false;
+        });
+
+    });
 </script>
 </body>
 </html>

@@ -1,3 +1,17 @@
+.scrollup{
+width:50px;
+height:45px;
+position: fixed;
+opacity: 0.7;
+bottom: 0;
+right: 5px;
+display:none;
+text-indent:-9999px;
+background: url('{{site.baseurl}}/img/icon_top.png') no-repeat;
+z-index: 3000;
+}
+
+
 
 a, a:link, a:active, a:visited, a:hover
 {
@@ -98,8 +112,8 @@ margin-right: 2em;
 
 /* Playing with Main Categories */
 .navigation li a {
-  background-image: url(../img/az_subtle.png);
-  background-repeat: repeat;
+ background-image: url(../img/az_subtle.png);
+ background-repeat: repeat;
 font-family: 'Coda', cursive, sans-serif;
 font-weight: 800;
 font-size: 1rem;
