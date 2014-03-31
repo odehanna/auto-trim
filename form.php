@@ -14,8 +14,7 @@ ini_set('display_errors', 'on');
 /*
 if ($_POST['submit']) {
            if (mail ($to, $subject, $body, $from)) {
-            header('Location: /thank-you/');
-            exit;
+             echo '<p>Thank you</p>';
            } else {
            echo '<p>Ah! Try again, please?</p>';
            }
