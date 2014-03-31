@@ -244,6 +244,25 @@ frmvalidator.addValidation("email","email",
 
     });
 </script>
+
+ <!-- form message -->
+<script>
+function confirmation()
+{
+var answer = confirm("Thank you!")
+ if (answer)
+ {
+  return true;
+ } else {
+  if (window.event) // True with IE, false with other browsers
+  {
+   window.event.returnValue=false; //IE specific
+  } else {
+   return false
+  }
+ }
+}
+</script>
 </body>
 </html>
 

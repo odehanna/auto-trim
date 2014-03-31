@@ -14,9 +14,11 @@ ini_set('display_errors', 'on');
 /*
 if ($_POST['submit']) {
            if (mail ($to, $subject, $body, $from)) {
-             echo '<p>Thank you</p>';
+            alert("SUCCESS!!!");
+            return true;
            } else {
-           echo '<p>Ah! Try again, please?</p>';
+           alert("Ah! Try again, please?");
+           return false;
            }
        }*/
 
