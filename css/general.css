@@ -9,4 +9,6 @@
 {% include css/slider.css %}
 {% include css/form.css %}
 {% include css/lightGallery.css %}
+{% include css/alertify.default.css %}
+{% include css/alertify.css %}
 
