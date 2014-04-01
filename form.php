@@ -42,8 +42,6 @@ if( empty($errors))
 
 mail($to,$subject,$body,$from);
 
-//redirect to the 'thank you' page
-header('Location: http://salon-mona.com/thank-you/');
 exit;
 
 } else {
