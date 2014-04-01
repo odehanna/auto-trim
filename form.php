@@ -6,7 +6,7 @@ ini_set('display_errors', 'on');
     $email = $_POST['email'];
     $text = $_POST['text'];
     $from = "From: $name <$email>";
-    $to = 'odeh.anna@gmail.com';
+    $to = 'mike_atd@rogers.com';
     $subject = 'Website Form';
 
     $body = "From: $name\n E-Mail: $email\n Message:\n $text";
@@ -41,8 +41,11 @@ if( empty($errors))
 {
 
 mail($to,$subject,$body,$from);
- echo "Email sent!";
+
+//redirect to the 'thank you' page
+header('Location: http://autotrimandsigns.net');
+exit;
+
 } else {
   echo "Not valid: $errors";
 }
-
