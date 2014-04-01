@@ -41,9 +41,7 @@ if( empty($errors))
 {
 
 mail($to,$subject,$body,$from);
-alertify.success("Success notification");
-exit;
-
+ echo "Email sent!";
 } else {
   echo "Not valid: $errors";
 }
