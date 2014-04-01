@@ -41,7 +41,7 @@ if( empty($errors))
 {
 
 mail($to,$subject,$body,$from);
- echo "Email sent!";
+ echo "Email sent succ!";
 } else {
   echo "Not valid: $errors";
 }
