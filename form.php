@@ -41,7 +41,7 @@ if( empty($errors))
 {
 
 mail($to,$subject,$body,$from);
-
+alertify.success("Success notification");
 exit;
 
 } else {
