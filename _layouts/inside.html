@@ -146,10 +146,15 @@
 <!-- nav small screens  -->
     <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
     <script type="text/javascript" src="{{site.baseurl}}/js/jquery.mmenu.js"></script>
-    <script type="text/javascript">
+    <script>
       $(function() {
         $('nav#menu').mmenu({
-          slidingSubmenus: false
+          slidingSubmenus: false,
+          moveBackground: true,
+          modal: false,
+          position: 'left',
+          zposition: 'back',
+          setSelected: true
         });
       });
     </script>
