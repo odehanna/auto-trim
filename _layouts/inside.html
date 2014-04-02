@@ -18,10 +18,26 @@
   <meta name="msapplication-wide310x150logo" content="{{site.baseurl}}/wide.png"/>
   <meta name="msapplication-square310x310logo" content="{{site.baseurl}}/large.png"/>
 
-<!--[if lt IE 9]>
- <link rel="stylesheet" type="text/css" media="all" href="{{site.baseurl}}/css/ie.css">
-<![endif]-->
+  <!--[if lte IE 6]>
+  <script src="{{site.baseurl}}/js/en_US.js"></script>
+  <script src="{{site.baseurl}}/js/warning.js"></script>
+  <script>
+    window.onload=function(){
+      ie6Warning(function() {
+        var languageMap = {};
+          //specifies a JSON hash table for localization
+        if(window.IE6WarningLocalizations) {
+          languageMap = window.IE6WarningLocalizations;
+        }
 
+        return {
+          imgPath: "{{site.baseurl}}/img/images.jpg", //specifies the path to the icons of each browser
+          localizations:  languageMap
+        };
+      });
+    };
+  </script>
+<![endif]-->
 
   <link rel="apple-touch-icon-precomposed" href="{{site.baseurl}}/apple-touch-icon.png">
   <link rel="icon" type="image/png"  href="{{site.baseurl}}/opera-icon.png">
