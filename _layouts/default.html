@@ -31,14 +31,9 @@
   <script src="{{site.baseurl}}/js/modernizr-1.0.min.js"></script>
 
   <script src="{{site.baseurl}}/js/iealert.js"></script>
-    <script>
-    $("body").iealert();
-    </script>
 
   <script src="{{site.baseurl}}/js/iealert.min.js"></script>
-      <script>
-    $("body").iealert();
-    </script>
+
 
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
@@ -50,6 +45,12 @@
 
 
   <body id="top">
+    <script>
+    $(document).ready(function(){
+
+        $('body').iealert();
+      });
+      </script>
 
       <div id="header">
         <a href="#menu"></a>
