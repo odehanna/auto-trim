@@ -11,14 +11,16 @@
  	<meta name="mobileoptimized" content="240">
  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <meta name="msapplication-TileImage" content="pinned.png">
   <meta name="msapplication-TileColor" content="#000000">
   <meta name="msapplication-square70x70logo" content="{{site.baseurl}}/tiny.png"/>
   <meta name="msapplication-square150x150logo" content="{{site.baseurl}}/square.png"/>
   <meta name="msapplication-wide310x150logo" content="{{site.baseurl}}/wide.png"/>
   <meta name="msapplication-square310x310logo" content="{{site.baseurl}}/large.png"/>
+
+  !-- Conditional class for older versions of IE -->
+<!--[if lt IE 9 & !IEMobile]><html class="ie" lang="en"><![endif]-->
+<!--[if gt IE 8 | IEMobile]><!--><html lang="en"><!--<![endif]-->
 
   <link rel="apple-touch-icon-precomposed" href="{{site.baseurl}}/apple-touch-icon.png">
   <link rel="icon" type="image/png"  href="{{site.baseurl}}/opera-icon.png">
@@ -153,8 +155,7 @@
           moveBackground: true,
           modal: false,
           position: 'left',
-          zposition: 'back',
-          setSelected: true
+          zposition: 'back'
         });
       });
     </script>
