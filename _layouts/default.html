@@ -7,17 +7,6 @@
   <meta name="generator" content=
   	"HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org">
 	<meta charset="UTF-8">
-
-      <!-- Change this to match your local server hostname and path -->
-  <base href="http://odehanna.github.io/auto-trim/"><!--[if lte IE 6]></base><![endif]-->
-  <script src="{{site.baseurl}}/js/respond.min.js"></script>
-
-
-  <!-- Respond.js proxy on external server -->
-  <link href="https://rawgithub.com/scottjehl/Respond/master/cross-domain/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
-  <link href="respond.proxy.gif" id="respond-redirect" rel="respond-redirect" />
-  <script src="{{site.baseurl}}/js/respond.proxy.js"></script>
-
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="handheldfriendly" content="true">
  	<meta name="mobileoptimized" content="240">
@@ -30,7 +19,9 @@
   <meta name="msapplication-wide310x150logo" content="{{site.baseurl}}/wide.png"/>
   <meta name="msapplication-square310x310logo" content="{{site.baseurl}}/large.png"/>
 
-
+<!--[if lt IE 9]>
+ <link rel="stylesheet" type="text/css" media="all" href="{{site.baseurl}}/css/ie.css">
+<![endif]-->
 
   <link rel="apple-touch-icon-precomposed" href="{{site.baseurl}}/apple-touch-icon.png">
   <link rel="icon" type="image/png"  href="{{site.baseurl}}/opera-icon.png">
