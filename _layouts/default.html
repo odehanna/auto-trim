@@ -245,14 +245,7 @@ frmvalidator.addValidation("email","email",
 
 <!-- IE  -->
 
-  <script src="{{site.baseurl}}/js/iealert.min.js"></script>
-    <script type="text/javascript">
-    $(document).ready(function(){
-
-        $('body').iealert();
-      });
-      </script>
-
+<!--[if lte IE 6]><script src="{{site.baseurl}}/js/warning.js"></script><script>window.onload=function(){e("{{site.baseurl}}/img/")}</script><![endif]-->
 
 </body>
 </html>
