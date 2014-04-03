@@ -34,7 +34,35 @@
 
 
   <body id="top">
-     <!--[if lt IE 11]><script src="{{site.baseurl}}/js/warning.js"></script><script>window.onload=function(){e("{{site.baseurl}}/ie6/")}</script><![endif]-->
+     <!--[if lt IE 11]><script src="{{site.baseurl}}/js/warning.js"></script>
+    <script>
+    function getBrowserWidth ( ) {
+    if ( window.innerWidth ) { return window.innerWidth; }
+    else if ( document.documentElement &&
+document.documentElement.clientWidth != 0 ) { return
+document.documentElement.clientWidth; }
+    else if ( document.body ) { return document.body.clientWidth; }
+    return 0;
+}
+
+function getBrowserHeight  ( ) {
+    if ( window.innerHeight  ) { return window.innerHeight ; }
+    else if ( document.documentElement &&
+document.documentElement.clientHeight != 0 ) { return
+document.documentElement.clientHeight; }
+    else if ( document.body ) { return document.body.clientHeight; }
+    return 0;
+}
+
+
+//var _width = document.documentElement.clientWidth;
+var _width = getBrowserWidth();
+
+//var _height = document.documentElement.clientHeight;
+var _height = getBrowserHeight();
+</script>
+
+     <script>window.onload=function(){e("{{site.baseurl}}/ie6/")}</script><![endif]-->
       <div id="header">
         <a href="#menu"></a>
       </div>
