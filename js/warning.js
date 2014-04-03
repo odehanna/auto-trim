@@ -6,7 +6,7 @@ var br2 = "Firefox 3+";
 var br3 = "Safari 3+";
 var br4 = "Opera 9.5+";
 var br5 = "Chrome 2.0+";
-var url1 = "http://www.microsoft.com/en-ca/download/ie.aspx?q=internet+explorer";
+var url1 = "http://windows.microsoft.com/en-ca/internet-explorer/ie-11-worldwide-languages";
 var url2 = "http://www.mozilla.com/firefox/";
 var url3 = "http://www.apple.com/safari/download/";
 var url4 = "http://www.opera.com/download/";
