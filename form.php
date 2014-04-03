@@ -6,7 +6,7 @@ ini_set('display_errors', 'on');
     $email = $_POST['email'];
     $text = $_POST['text'];
     $from = "From: $name <$email>";
-    $to = 'mike_atd@rogers.com';
+    $to = 'info_atd@rogers.com';
     $subject = 'Website Form';
 
     $body = "From: $name\n E-Mail: $email\n Message:\n $text";
