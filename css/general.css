@@ -6,6 +6,7 @@
 {% include css/normalize.css %}
 {% include css/reset.css %}
 {% include css/jquery.mmenu.css %}
+{% include css/jquery.mmenu.ie8.css %}
 {% include css/slider.css %}
 {% include css/form.css %}
 {% include css/lightGallery.css %}
