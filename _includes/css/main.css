@@ -148,7 +148,7 @@ h1  {
   .heading{
     line-height: 1;
     letter-spacing: 0.5px;
-    font-size: 1.8rem;
+    font-size: 1.1rem;
     margin-bottom: 2rem;
     margin-top: 40px;
     color: #a03021;
@@ -164,8 +164,20 @@ h1  {
 @media only screen and (min-width: 300px){
 .heading-first{
     font-size: 3rem;
+}
+}
+@media only screen and (min-width: 320px){
+  .heading{
+    font-size: 1.8rem;
+  }
 
 }
+
+@media only screen and (min-width: 600px){
+  .heading{
+    font-size: 2.8rem;
+  }
+
 }
 
 @media only screen and (min-width: 30rem){
@@ -310,9 +322,6 @@ font-size: 1.7rem;
   text-align: left;
 }
 
-#info h1{
-
-}
 
 /* blockquotes ------------------------------------------------------------*/
 
@@ -875,7 +884,12 @@ h6{
 
 #info p{
   text-align: left;
-  padding-bottom: 2rem;
+}
+
+@media (min-width: 900px){
+  #info p{
+  font-size: 1.3rem;
+}
 }
 
 .list-unstyled {
