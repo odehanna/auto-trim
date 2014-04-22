@@ -37,9 +37,6 @@ p{
   font-size: 1.2rem;
 }
 
-h1 #welcome-paragraph{
-font-size: 5rem;
-}
 
 .read_more{
   color:red;
@@ -720,7 +717,7 @@ a.footer:hover
 .map-big iframe {
   width:100%;
   height: 200px;
-  padding-bottom: 2rem;
+  padding-bottom: 0.4rem;
   border: none;
 
 }
@@ -821,10 +818,20 @@ h6{
 
 @media (min-width: 400px){
   h6{
+   font-size: 1.1rem;
+ }
+}
+
+@media (min-width: 1000px){
+  h6{
    font-size: 1.3rem;
  }
 }
 
+small{
+  color: grey;
+  padding-left: 16px;
+}
 
 .verticalLine{
   border-bottom: 2px solid #d30505;

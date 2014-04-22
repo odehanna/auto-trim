@@ -47,6 +47,19 @@ img{
 width:100%;
 border: solid 5px #fff;
 }
+.media_img{
+display:none;
+}
+
+@media only screen and (min-width: 900px){
+.media_img{
+display:block;
+width:100%;
+padding-left: 16px;
+padding-top: 1rem;
+padding-bottom: 1rem;
+}
+}
 
 @media only screen and (min-width: 900px){
 .img-flex{
