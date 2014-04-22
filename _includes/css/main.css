@@ -679,7 +679,7 @@ a.footer:active,
 a.footer:visited,
 a.footer:hover
 {
-  color:#56555a;
+  color:#bdbdbd;
   text-decoration: none;
 }
 
@@ -687,7 +687,7 @@ a.footer:hover
   display: none;
 }
 
-@media (min-width: 750px){
+@media (min-width: 900px){
   .footer-menu{
   display:inline-block;
   text-align: center;
