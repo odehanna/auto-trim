@@ -303,10 +303,10 @@ h1  {
 
   }
 }
-.contractors a{
-color:grey;
+#contractors{
+  color:grey;
+  text-decoration: underline;
 }
-
 
 .text-muted {
 
