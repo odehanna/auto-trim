@@ -889,6 +889,11 @@ h6{
 @media (min-width: 900px){
   #info p{
   font-size: 1.3rem;
+  width:80%;
+}
+#info{
+  padding-bottom: 1rem;
+  padding-top:  1rem;
 }
 }
 
