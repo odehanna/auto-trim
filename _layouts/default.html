@@ -30,6 +30,23 @@
 
 
   <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+
+  <!-- nav small screens  -->
+    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="{{site.baseurl}}/js/jquery.mmenu.js"></script>
+    <script>
+      $(function() {
+        $('nav#menu').mmenu({
+          slidingSubmenus: false,
+          moveBackground: true,
+          modal: false,
+          position: 'left',
+          zposition: 'back'
+        });
+      });
+    </script>
+
+
 </head>
 
 
@@ -157,20 +174,6 @@
 
 
 
-<!-- nav small screens  -->
-    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
-    <script type="text/javascript" src="{{site.baseurl}}/js/jquery.mmenu.js"></script>
-    <script>
-      $(function() {
-        $('nav#menu').mmenu({
-          slidingSubmenus: false,
-          moveBackground: true,
-          modal: false,
-          position: 'left',
-          zposition: 'back'
-        });
-      });
-    </script>
 <!-- nav big screens  -->
   <script type="text/javascript">
 // Executes the function when DOM will be loaded fully
