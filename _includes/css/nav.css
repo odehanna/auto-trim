@@ -132,13 +132,13 @@ padding-left: 12px;
 
 @media only screen and (min-width: 1400px){
 .navigation li a {
-font-size: 1.2rem;
+font-size: 1.4rem;
 }
 	}
 
 @media only screen and (min-width: 1800px){
 .navigation li a {
-font-size: 1.4rem;
+font-size: 1.5rem;
 }
 	}
 .navigation li a:hover {
@@ -185,6 +185,14 @@ border-bottom:1px solid #d8d8d8;
 font-size: 0.9rem;
 padding:18px 12px 10px 12px;
 }
+
+
+@media only screen and (min-width: 1000px){
+	#header-big .sub{
+font-size:1rem;
+}
+}
+
 
 .navigation ul a:hover {
 color:#cb1c2b;
